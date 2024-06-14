@@ -1,0 +1,140 @@
+body {
+  background-color: #171717;
+  height: 100%;
+  min-height: 100%;
+  padding: 0 5% 0;
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 14px;
+  color: white;
+  height: 100vh;
+
+  button, input {
+    margin-bottom: 10px !important;
+    height: 45px !important;
+    border-radius: 90px !important;
+  }
+  button.btn {
+    color: rgb(23, 23, 23);
+    font-weight: 700;
+    font-size: 12px;
+  }
+  a{
+    color: rgba(82, 255, 141);
+  }
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.hidden {
+  display: none;
+}
+
+.page {
+  // padding: 20px 0;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: space-between;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.widthMax {
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  padding-bottom: 20px;
+  div {
+    width: 100%;
+  }
+}
+
+
+.h2Span {
+  h2 {
+    margin-bottom: 8px;
+  }
+  margin-bottom: 16px;
+
+}
+
+.liner {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  .linerBlock {
+    background-color: #404040;
+    width: 100%;
+    height: 1px;
+  }
+
+  .linerBlockMain {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+}
+
+
+.ant-btn-primary:disabled, .ant-btn-primary.ant-btn-disabled {
+  background: linear-gradient(135deg, #40e495, #30dd8a, #2bb673);
+  opacity: 0.5;
+
+}
+
+.ant-drawer-content.DrawerCustom {
+  border-radius: 20px 20px 0px 0px;
+  background: rgb(32, 32, 32);
+  color: rgb(255, 255, 255);
+  
+  .ant-drawer-title {
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+
+    .anticon {
+      background: rgb(104, 104, 104);
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+
+  p{
+    margin-bottom: 16px;
+  }
+
+  input{
+    box-sizing: border-box;
+    border: 1px solid rgb(82, 255, 141);
+    border-radius: 5px !important;
+  }
+
+  .DrawerCustom_blockInput{
+    margin-bottom: 16px;
+  }
+
+
+}
+
+.prevStepBlock {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 16px;
+}
+
+.error {
+  color: rgb(255, 9, 9);
+  margin-bottom: 16px;
+}

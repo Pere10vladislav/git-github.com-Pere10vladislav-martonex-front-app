@@ -15,7 +15,7 @@ body {
     border-radius: 90px !important;
   }
   button.btn {
-    color: rgb(23, 23, 23);
+    // color: rgb(23, 23, 23);
     font-weight: 700;
     font-size: 12px;
   }
@@ -51,7 +51,7 @@ code {
 .content {
   width: 100%;
   padding-bottom: 20px;
-  div {
+  #div {
     width: 100%;
   }
 }
@@ -139,3 +139,138 @@ code {
   margin-bottom: 16px;
 }
 
+.marginB16 {
+  margin-bottom: 16px;
+}
+
+.disabledInput {
+  color: white !important;
+  background: rgb(32, 32, 32) !important;
+  border: none;
+}
+
+.wishBlock {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.ant-input-outlined.ant-input-disabled:hover:not([disabled]),
+ .ant-input-outlined[disabled]:hover:not([disabled]),
+ .ant-input-outlined.ant-input-disabled,
+ .ant-select-selector, 
+ .ant-picker-outlined
+ {
+  margin-bottom: 10px !important;
+  height: 45px !important;
+  border-radius: 90px !important;
+  input{
+    margin: 0 !important;
+    height: auto !important;
+  }
+}
+
+.ant-select-single {
+  .ant-select-selector {
+    margin-bottom: 10px !important;
+  }
+}
+
+// .content .SelectBlock {
+//   display: flex;
+//   align-items: center;
+//   justify-content: space-between;
+//   margin-bottom: 10px !important;
+//   height: 45px !important;
+//   border-radius: 90px !important;
+//   border: 1px solid #7C7C7C;
+//   padding: 10px;
+//   width: auto;
+
+//   span::first-letter {
+//     display: flex;
+//     justify-content: space-between;
+//     width: 25%;
+//   }
+
+//   .ant-input-outlined.ant-input-disabled:hover:not([disabled]), .ant-input-outlined[disabled]:hover:not([disabled]), .ant-input-outlined.ant-input-disabled, .ant-select-selector, .ant-picker-outlined {
+//     margin: 0 !important;
+//     border: none !important;
+//   }
+
+
+// }
+
+
+
+.reverse-collapse {
+  display: flex;
+  flex-direction: column-reverse;
+  border: none;
+  .CustomSelectPrefix{ 
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .CustomSelectBody{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+
+    .ant-select-arrow{
+      position: static;
+      margin: 0;
+    }
+
+    .ant-select-selector{
+      margin: 0 !important;
+      border: none !important;
+    }
+  }
+
+  .CustomSelect{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .ant-collapse-header {
+    border-radius: 90px !important;
+    border: 1px solid;
+  }
+
+  .ant-collapse-item {
+    display: flex;
+    flex-direction: column;
+    border-radius: 90px !important;
+
+  }
+  .ant-collapse-item.ant-collapse-item-active {
+    border-radius: 30px !important;
+  }
+
+  .ant-collapse-content.ant-collapse-content-active {
+    border-radius: 30px !important;
+    border: none;
+  }
+
+  .ant-collapse-content {
+    order: -1;
+  }
+  
+  .ant-collapse-expand-icon {
+    height: 45px  !important;
+  }
+}
+
+.SelectBlockOption {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.ProfileBlock .ant-select-arrow {
+  margin-top: -11px !important;
+}

@@ -1,8 +1,8 @@
 import { useState, useEffect } from "react"
 import { Flex, Input, Button } from 'antd';
-import { LeftOutlined, UserOutlined } from '@ant-design/icons';
+import { LeftOutlined, GoogleCircleFilled, AppleFilled } from '@ant-design/icons';
 
-import DrawerCustom from './components/DrawerCustom'
+import DrawerCustom from '../../components/DrawerCustom'
 import axios, { Axios } from "axios";
 import { useNavigate } from 'react-router-dom'; // Импортируем useNavigate
 
@@ -58,8 +58,14 @@ function Main({nextStep}) {
                 </span>
             </Flex>
             <Flex className="widthMax" vertical='vertical' justify='space-between' align='center'>
-                <Button className="widthMax">Sign in with Google</Button>
-                <Button className="widthMax">Sign in with Google</Button>
+                <Button className="widthMax btnAutApi"> 
+                  <GoogleCircleFilled />
+                  Sign in with Google
+                </Button>
+                <Button className="widthMax btnAutApi">
+                  <AppleFilled />
+                  Sign in with Google
+                </Button>
 
                 <div class="liner">
                   <div class="linerBlock"></div>
